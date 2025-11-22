@@ -1,0 +1,27 @@
+{
+  "name": "tarz-e-naaz",
+  "version": "1.0.0",
+  "description": "Fullstack website for Tarz-e-Naaz",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "echo 'Add your build commands here if using frontend frameworks like Next.js'"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC"
+}
+

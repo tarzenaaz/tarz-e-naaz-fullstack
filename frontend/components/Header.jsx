@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Header(){ return (<header className="bg-white sticky top-0 z-50 border-b"><div className="container mx-auto px-6 py-4 flex items-center justify-between"><Link href="/" className="flex items-center gap-4"><img src="/logo.png" className="h-14 object-contain" alt="logo" /></Link><nav className="hidden md:flex gap-6"><Link href="/shop" className="text-gray-700">Shop</Link><Link href="/about" className="text-gray-700">About</Link><Link href="/cart" className="text-gray-700">Cart</Link></nav></div></header>); }

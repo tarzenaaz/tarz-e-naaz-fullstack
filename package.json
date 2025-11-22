@@ -1,27 +1,14 @@
 {
-  "name": "tarz-e-naaz",
+  "name": "tarz-e-naaz-fullstack",
   "version": "1.0.0",
-  "description": "Fullstack website for Tarz-e-Naaz",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "echo 'Add your build commands here if using frontend frameworks like Next.js'"
-  },
-  "engines": {
-    "node": "22.x"
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm run build && npm run start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "pg": "^8.11.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "keywords": [],
-  "author": "Your Name",
-  "license": "ISC"
+    "concurrently": "^9.0.0"
+  }
 }
-
